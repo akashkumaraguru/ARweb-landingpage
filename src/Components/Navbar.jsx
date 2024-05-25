@@ -17,8 +17,8 @@ const Navbar = () => {
         <div className="flex  justify-between items-center container px-10 mx-auto relative  text-sm">
           
            <div className="flex items-center flex-shrink-0">
-            <img className=" h-10 w-10 mr-2" src={Logo} alt="logo" />
-            <span className="text-xl tracking-tight text-white">
+            <img className="mr-2 size-[52px] " src={Logo } alt="logo" />
+            <span className=" hidden lg:flex  text-xl tracking-tight text-white ">
               VirtualReality
             </span>
           </div>
@@ -34,16 +34,16 @@ const Navbar = () => {
 
           <div className='hidden lg:flex justify-around gap-10 ml-20 items-center '>
             <a href="#" className='py-2 px-3 border rounded-md hover:bg-blue-600 hover:border-none' >Sign in</a>
-            <a href="#" className='bg-gradient-to-r from-blue-500 to-blue-800 py-2 px-3 rounded-md hover:bg-black '>Create Account</a>
+            <a href="#" className='bg-gradient-to-r from-blue-800 to-blue-500 py-2 px-3 rounded-md '>Create Account</a>
           </div>
 
          <div className='lg:hidden md:flex flex-col justify-end'>
           <button onClick={toggleNavbar}>         
-          {mobileDrawOpen ? <IoClose className='size-[32px]' />: <RxHamburgerMenu className='size-[32px]' /> }   
+          {mobileDrawOpen ? <IoClose className='lg:hidden size-[32px]' />: <RxHamburgerMenu className=' lg:hidden size-[32px] ' /> }   
           </button>
          </div>
 
-         {mobileDrawOpen &&(
+         {mobileDrawOpen && (
           <div className='fixed right-0 z-20 top-[50px] py-10 gap-10 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden'>
               <a href="#" className='hover:text-blue-200'>Features</a>
               <a href="#" className='hover:text-blue-200' >Workflow</a>
@@ -52,7 +52,7 @@ const Navbar = () => {
 
               <div className='flex space-x-6'>
               <a href="#" className='py-3 px-6 border rounded-md hover:bg-blue-600 hover:border-none' >Sign in</a>
-            <a href="#" className='bg-gradient-to-r from-blue-500 to-blue-800 py-3 px-6 rounded-md hover:bg-black '>Create Account</a>
+            <a href="#" className='bg-gradient-to-r from-blue-800 to-blue-500 py-3 px-6 rounded-md hover:bg-black '>Create Account</a>
                 </div>    
           </div>
          )}
