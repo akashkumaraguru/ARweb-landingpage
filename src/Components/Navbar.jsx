@@ -23,7 +23,7 @@ const Navbar = () => {
             </span>
           </div>
 
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <ul className="hidden lg:flex ml-20 space-x-12">
             <li className='flex gap-10'>
               <a href="#" className='hover:text-blue-200'>Features</a>
               <a href="#" className='hover:text-blue-200' >Workflow</a>
@@ -37,7 +37,7 @@ const Navbar = () => {
             <a href="#" className='bg-gradient-to-r from-blue-800 to-blue-500 py-2 px-3 rounded-md '>Create Account</a>
           </div>
 
-         <div className='lg:hidden md:flex flex-col justify-end'>
+         <div className='hidden md:flex flex-col justify-end'>
           <button onClick={toggleNavbar}>         
           {mobileDrawOpen ? <IoClose className='lg:hidden size-[32px]' />: <RxHamburgerMenu className=' lg:hidden size-[32px] ' /> }   
           </button>
