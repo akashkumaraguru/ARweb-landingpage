@@ -30,7 +30,7 @@ const HeroSection = () => {
 </video>
 
 </div>
-<div className='text-center p-[50px] '>
+<div className='text-center p-[30px] '>
             <span className='bg-neutral-900 text-blue-500 rounded-full h-6 text-sm font-medium px-2 py-1  uppercase ' >Feature</span>
           <h2 className='text-3xl sm:text-5xl lg:text-5xl mt-8 tracking-wide '>
             Easily build <span className='bg-gradient-to-r from-blue-600 to-blue-300 text-transparent bg-clip-text '> {" "}your code</span>
