@@ -49,7 +49,7 @@ const FeatureSection = () =>{
     return(
       <div className='flex flex-wrap'>
             {FeatureSecInfos.map((e, index) => (
-                <div key={index} className='w-full sm:w-1/2 p-4 cursor-pointer'>
+                <div key={index} className='w-full sm:w-1/2 p-4 cursor-pointer hover:scale-105 duration-300'>
                     <FeatureSecLayout icon={e.icon} text={e.text} description={e.description} />
                 </div>
             ))}

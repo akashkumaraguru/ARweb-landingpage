@@ -19,12 +19,12 @@ const HeroSection = () => {
                     <a href="#" className='py-3 px-4 mx-3 border rounded-md'>Documentation</a>
         </div>
 </div>
-<div className='flex mr-30 justify-center items-center  md:p-10 mr-10'>
-<video autoPlay loop muted className='rounded-lg w-1/2 border border-blue-500 shadow-blue-400 mx-10 my-4' >
+<div className='flex mr-30 justify-center items-center  md:p-10 mr-10  '>
+<video autoPlay loop muted className='rounded-lg w-1/2 border border-blue-500 shadow-blue-400 mx-10 my-4 hover:scale-105 duration-300' >
     <source src={video1} type='video/mp4' />
     Your browser does not support here!
 </video>
-<video autoPlay loop muted className='rounded-lg w-1/2 border border-blue-500 shadow-blue-400 mx-2 my-4 ' >
+<video autoPlay loop muted className='rounded-lg w-1/2 border border-blue-500 shadow-blue-400 mx-2 my-4 hover:scale-105 duration-30 ' >
     <source src={video2} type='video/mp4' />
     Your browser does not support here!
 </video>
