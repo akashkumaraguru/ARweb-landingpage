@@ -37,7 +37,7 @@ const Navbar = () => {
             <a href="#" className='bg-gradient-to-r from-blue-800 to-blue-500 py-2 px-3 rounded-md '>Create Account</a>
           </div>
 
-         <div className='hidden md:flex flex-col justify-end'>
+         <div className='md:flex flex-col justify-end'>
           <button onClick={toggleNavbar}>         
           {mobileDrawOpen ? <IoClose className='lg:hidden size-[32px]' />: <RxHamburgerMenu className=' lg:hidden size-[32px] ' /> }   
           </button>
